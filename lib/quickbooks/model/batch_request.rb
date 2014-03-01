@@ -6,11 +6,9 @@ class Quickbooks::Model::BatchRequest < Quickbooks::Model::BaseModel
 
     xml_accessor :operation, :from => "@operation"
     xml_accessor :bId, :from => "@bId"
-    xml_accessor :customer, from: "Customer", :as => Quickbooks::Model::Customer
-    xml_accessor :item, from: "Item", :as => Quickbooks::Model::Item
-    xml_accessor :payment, from: "Payment", :as => Quickbooks::Model::Payment
-    xml_accessor :sales_receipt, from: "SalesReceipt", :as => Quickbooks::Model::SalesReceipt
-    xml_accessor :invoice, from: "Invoice", :as => Quickbooks::Model::Invoice
+    [:Item, :Account, :Invoice, :Customer, :Bill, :SalesReceipt, :Payment].each do |model|
+      xml_accessor model.to_s.underscore, from: model.to_s, as: "Quickbooks::Model::#{model.to_s}".constantize
+    end
   end
 
   XML_COLLECTION_NODE = "IntuitBatchRequest"
