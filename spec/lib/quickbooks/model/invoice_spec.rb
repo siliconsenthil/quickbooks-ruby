@@ -54,6 +54,14 @@ describe "Quickbooks::Model::Invoice" do
     shipping_address.lat.should == "33.739466"
     shipping_address.lon.should == "-118.0395574"
 
+    #payment transactions
+    invoice.linked_transactions.should_not be_nil
+    invoice.linked_transactions.size.should == 3
+    transaction = invoice.linked_transactions[0]
+    transaction.should be_an_instance_of Quickbooks::Model::LinkedTransaction
+    transaction.txn_id.to_i.should == 3
+    transaction.txn_type.should == "Payment"
+
     invoice.sales_term_ref.to_i.should == 2
     invoice.due_date.to_date.should == Date.civil(2013, 11, 30)
     invoice.total_amount.should == 50.00

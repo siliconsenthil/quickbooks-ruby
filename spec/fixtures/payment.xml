@@ -1,0 +1,24 @@
+<Payment domain="QBO" sparse="false">
+  <Id>4</Id>
+  <SyncToken>0</SyncToken>
+  <MetaData>
+    <CreateTime>2014-02-26T22:54:29-08:00</CreateTime>
+    <LastUpdatedTime>2014-02-26T22:54:29-08:00</LastUpdatedTime>
+  </MetaData>
+  <TxnDate>2014-02-27</TxnDate>
+  <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+  <Line>
+    <Amount>40.00</Amount>
+    <LinkedTxn>
+      <TxnId>2</TxnId>
+      <TxnType>Invoice</TxnType>
+    </LinkedTxn>
+  </Line>
+  <CustomerRef>1</CustomerRef>
+  <DepositToAccountRef>4</DepositToAccountRef>
+  <PaymentMethodRef>2</PaymentMethodRef>
+  <PaymentRefNum>def</PaymentRefNum>
+  <TotalAmt>40.00</TotalAmt>
+  <UnappliedAmt>0</UnappliedAmt>
+  <ProcessPayment>false</ProcessPayment>
+</Payment>
