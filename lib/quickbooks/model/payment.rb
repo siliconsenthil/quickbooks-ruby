@@ -28,6 +28,17 @@ module Quickbooks
         super
       end
 
+      def link_to_invoice(invoice_id)
+        self.line_items << Quickbooks::Model::PaymentLineItem.new.tap do |li|
+          li.amount = self.amount
+          li.linked_transactions = []
+          li.linked_transactions << Quickbooks::Model::LinkedTransaction.new.tap do |t|
+            t.txn_id = invoice_id
+            t.txn_type = "Invoice"
+          end
+        end
+      end
+
       private
 
       def ensure_line_items_initialization

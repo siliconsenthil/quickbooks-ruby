@@ -23,17 +23,9 @@ describe "Quickbooks::Model::Payment" do
     payment = Quickbooks::Model::Payment.new  
     payment.amount = BigDecimal.new(30,2)
     payment.txn_date = Date.today
-    payment.line_items = []
-    payment.line_items << Quickbooks::Model::PaymentLineItem.new.tap do |li|
-      li.amount = BigDecimal.new(30,2)
-      li.linked_transactions = []
-      li.linked_transactions << Quickbooks::Model::LinkedTransaction.new.tap do |t|
-        t.txn_id = 2
-        t.txn_type = "Invoice"
-      end
-    end
-
+    payment.link_to_invoice(2)
     payment1 = Quickbooks::Model::Payment.from_xml(payment.to_xml.to_s)
     payment1 == payment
   end
+
 end
