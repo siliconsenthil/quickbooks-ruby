@@ -7,6 +7,7 @@ describe Quickbooks::Model::Fault do
     fault.errors.size.should == 2
     first_error = fault.errors.first
     first_error.code.should == "101"
+    first_error.element.should == "firstname"
     first_error.message.should == "Length of the field exceeds 21 chars"
 
     last_error = fault.errors.last
