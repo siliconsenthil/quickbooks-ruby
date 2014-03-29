@@ -53,6 +53,10 @@ require 'quickbooks/model/payment_line_item'
 require 'quickbooks/model/payment'
 require 'quickbooks/model/batch_request'
 require 'quickbooks/model/batch_response'
+require 'quickbooks/model/tax_rate'
+require 'quickbooks/model/tax_rate_detail'
+require 'quickbooks/model/sales_tax_rate_list'
+require 'quickbooks/model/tax_code'
 
 #== Services
 require 'quickbooks/service/base_service'
@@ -71,6 +75,8 @@ require 'quickbooks/service/vendor'
 require 'quickbooks/service/employee'
 require 'quickbooks/service/payment'
 require 'quickbooks/service/batch'
+require 'quickbooks/service/tax_rate'
+require 'quickbooks/service/tax_code'
 
 unless Quickbooks::Util::ClassUtil.defined?("InvalidModelException")
   class InvalidModelException < StandardError; end

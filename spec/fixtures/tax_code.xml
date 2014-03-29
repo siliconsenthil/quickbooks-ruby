@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<TaxCode domain="QBO" sparse="false">
+    <Id>2</Id>
+    <SyncToken>0</SyncToken>
+    <MetaData>
+        <CreateTime>2014-02-26T22:50:51-08:00</CreateTime>
+        <LastUpdatedTime>2014-02-26T22:50:51-08:00</LastUpdatedTime>
+    </MetaData>
+    <Name>Federal Tax</Name>
+    <Description>Federal Tax</Description>
+    <Active>true</Active>
+    <Taxable>true</Taxable>
+    <TaxGroup>true</TaxGroup>
+    <SalesTaxRateList>
+        <TaxRateDetail>
+            <TaxRateRef name="Federal Tax">1</TaxRateRef>
+            <TaxTypeApplicable>TaxOnAmount</TaxTypeApplicable>
+            <TaxOrder>0</TaxOrder>
+        </TaxRateDetail>
+    </SalesTaxRateList>
+    <PurchaseTaxRateList/>
+</TaxCode>

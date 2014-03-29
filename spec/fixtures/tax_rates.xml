@@ -1,0 +1,140 @@
+<IntuitResponse xmlns="http://schema.intuit.com/finance/v3" time="2014-03-27T23:55:10.472-07:00">
+  <QueryResponse startPosition="1" maxResults="9" totalCount="9">
+    <TaxRate domain="QBO" sparse="false">
+      <Id>4</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>blah1</Name>
+      <Description>Sales Tax</Description>
+      <Active>true</Active>
+      <RateValue>10</RateValue>
+      <AgencyRef>2</AgencyRef>
+      <SpecialTaxType>NONE</SpecialTaxType>
+      <DisplayType>ReadOnly</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>2</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>asdasd-Adjustments to tax on sales</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>2</AgencyRef>
+      <TaxReturnLineRef>15</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>3</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>asdasd-Other adjustments</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>2</AgencyRef>
+      <TaxReturnLineRef>17</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+
+    <TaxRate domain="QBO" sparse="false">
+      <Id>9</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:20-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:20-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Blah2</Name>
+      <Description>Sales Tax</Description>
+      <Active>true</Active>
+      <RateValue>5</RateValue>
+      <AgencyRef>3</AgencyRef>
+      <SpecialTaxType>NONE</SpecialTaxType>
+      <DisplayType>ReadOnly</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>1</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-02-26T22:50:51-08:00</CreateTime>
+        <LastUpdatedTime>2014-02-26T22:50:51-08:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Federal Tax</Name>
+      <Description>Sales Tax</Description>
+      <Active>true</Active>
+      <RateValue>10</RateValue>
+      <AgencyRef>1</AgencyRef>
+      <SpecialTaxType>NONE</SpecialTaxType>
+      <DisplayType>ReadOnly</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>7</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>sasd-Adjustments to tax on sales</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>3</AgencyRef>
+      <TaxReturnLineRef>26</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>5</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>sasd-Adjustments to tax on sales</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>3</AgencyRef>
+      <TaxReturnLineRef>15</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>8</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:20-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:20-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>sasd-Other adjustments</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>3</AgencyRef>
+      <TaxReturnLineRef>28</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+    <TaxRate domain="QBO" sparse="false">
+      <Id>6</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2014-03-21T02:16:19-07:00</CreateTime>
+        <LastUpdatedTime>2014-03-21T02:16:19-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>sasd-Other adjustments</Name>
+      <Description>Adjustment</Description>
+      <Active>true</Active>
+      <AgencyRef>3</AgencyRef>
+      <TaxReturnLineRef>17</TaxReturnLineRef>
+      <SpecialTaxType>ADJUSTMENT_RATE</SpecialTaxType>
+      <DisplayType>HideInAll</DisplayType>
+    </TaxRate>
+  </QueryResponse>
+</IntuitResponse>
